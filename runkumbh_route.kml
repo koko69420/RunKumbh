@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="1rNAjJ1uHXgZm5b3B2CIHHmL2sy3CO3J_">
+	<name>runkumbh_route</name>
+	<gx:CascadingStyle kml:id="__managed_style_26D874DA9C379E2FDD19">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAACx0lEQVQ4jY3UT2gcdRQH8M9Mtoa00ZKDHjZiil7Wgj32ZsGDl0p7EopCCwrSg0c11h4UPGjM1WuL/06tYsVSECQ92GhxiQepSVvbVaNNxIuJ2d1s9s/seJjfbqabpfpgYefN+37f933fY6I0TdWm90cYwSjGsA8v4ilZfIMPcBtbaKIzPruURtXXHo+wK4AfwAm8FEiiQJDid5zFR1gPRO1CrvNevIPjdkaEKbyNA3gVa0gLuA/343kcH3nsoLGTH+5gaM9/ovnlu/AsruEMkkKY+WG8nAc0L87ort5IIS6WjB45FXXXVrSvfAwnMYebMXbjBTySJ+iu3kiTSjlKKmWdhQuDgoqBZE8Be/DMYMXo0TeitLEBUVwsSddWB4mOYia27f5d0V29LqmUs9/inGiiaOTRg2muZC9GC4hxJyTIVha1F76QVMr96rGJSbuePBF1Fud6qVVEBXRwASXZSqNgXK9bFE9MioslyTY4xTlhC018h1uBJPPgyKneEYHO4uXeGuEXXMZWAXXZUVxEKamU1ab3D1oyGJfwNzZj2Un+g6v46b+Q+BnzsnPuE1TxJz5D+x7gDs7jj4BpxmiFMdaDim/vQXA1172OVoxEZuRGmOvT8H8wavhc5lc1KE9i2Upa2JR5cRPfDyFYkHnU745uPD67lAYVW6HLOr4aUFHH1+FdLShOxmeX0hgCSQeNIO8alnMEd4KCaqhpB4w4V5TYNrSKH8J4KX4Muc1e9x6oTxAY26GgLrvORnieD7kt4VvYwxUGjOoGkgauB9BIGKkRFCZ5wDCCTk7FX7JP3kbIdUJNP/IeyG2kt9YV2YVu9rrn5Q9T0FPRWj72+nPL9ZWnYWr35LGp8++9P9h9h4IcQfvWxq9vHj50Oj586HR8u/bbW0HB/yZoDckPJRg2Qopk30MHXrl0ZWaW1NSDT0xzLgnv7op/AVrwJqSDd8RLAAAAAElFTkSuQmCC</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.7</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4.8</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_9F03C608CE379E2FDD18">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAAC9UlEQVQ4jX3UzWtcVRgG8N/chMSkvW2hUJnU1GohaNFN8we0LlxJBEWRCF0oOC7cCK0FF6IrESEudNUquAx+YN0IgqDBryI4BakoGW2ptE5poRo7+WimmXld3HOn0zj2gQPnnvO+z/O877nnVCIClQqGMIox7MWzeEiBr/E+fsd1rGODCBEqEUYi5BF2R3g5wrkI3QiRRjfC+QivRNgTYVvKqVQiDCfV7Xgdh1utIY3GuBJ53jE1tVp+foyj+BtrwxhBjqdxuF7PHTmyz/LykNnZK+r1XKMxZnb2ilqtKc87T+AM3kMnS+p34YVmc6SXDNPTrahW18H8/C4nTkyULp7HPRjLMI5nsGdubrKXfPDgkkZjvHLp0mivlPn5XZrNEZhIJFsybMEjUK/nveCZmatqtaZDh5b0Y2FhRzl9tCQYxTb01OHo0X0GYXl5uJxux2iGDBdhamptYFI/+k6jiUqGDZxEp1Zr9gKPH28EolZrOnCgpRRIJQU+QKcSYQr78Bbum5ubND+/S7XaVp7A6dO5arVtbu5s6eAsXsRvlQi7MYnH8RJFMxcWdlhcHJPnHdPTLTMzV+V5pzT4dnJwQYSdEe6P8FiEM32/7/+NxQhPRtgfYWemuBwtXFL8pjdu08MNfIgLKWc9QxsrWMIpfHcbglP4NsWuoJ2ho7ie1/AXPkrzzVjGJ4pL1ErOO1k6kjZW8Q8W8cMAgh/xc786uhkRycX1pLKEzze5WMEXaW85Oe4QkRX7EalBa8neGfzRR3AxOWilmBspR9YX1HGzoS3UU3mBn9La6k31An0EEQWz9UTyfVJbV3R+JZW5UarDsFvRTSRr+DUlDaWS1pLDTn/CIIKNPheXFU/eNb2XWPc2BBFUyl6s4k/ckeZJ/ab9QQ5KF+1fzr07e755+WHYO3HnU/vvfe6dzepJc/NtMRxh68kvX+1GwqdfvdaNsLXYuzU++w9jcjBgvT3IwaASAp29Ew8e+eybN94k3F194FhRv9gc/C92R5LbTlwL3wAAAABJRU5ErkJggg==</href>
+				</Icon>
+				<hotSpot x="8" y="14" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.7</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4.8</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_733A48ABD7379E2FDD18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_835A81A962379E2FDD18</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_9F03C608CE379E2FDD18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_0A08D273EB379E2FDD17">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1CFA62EFD1379E2FDD17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_0AB5DC1385379E2FDD18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_0AB5DC1385379E2FDD18">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4.8</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_4E08E5FFC7379E2FDD18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_5CC0F202BB379E2FDD18</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_6740271BAF379E2FDD18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_835A81A962379E2FDD18">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAAC9UlEQVQ4jX3UzWtcVRgG8N/chMSkvW2hUJnU1GohaNFN8we0LlxJBEWRCF0oOC7cCK0FF6IrESEudNUquAx+YN0IgqDBryI4BakoGW2ptE5poRo7+WimmXld3HOn0zj2gQPnnvO+z/O877nnVCIClQqGMIox7MWzeEiBr/E+fsd1rGODCBEqEUYi5BF2R3g5wrkI3QiRRjfC+QivRNgTYVvKqVQiDCfV7Xgdh1utIY3GuBJ53jE1tVp+foyj+BtrwxhBjqdxuF7PHTmyz/LykNnZK+r1XKMxZnb2ilqtKc87T+AM3kMnS+p34YVmc6SXDNPTrahW18H8/C4nTkyULp7HPRjLMI5nsGdubrKXfPDgkkZjvHLp0mivlPn5XZrNEZhIJFsybMEjUK/nveCZmatqtaZDh5b0Y2FhRzl9tCQYxTb01OHo0X0GYXl5uJxux2iGDBdhamptYFI/+k6jiUqGDZxEp1Zr9gKPH28EolZrOnCgpRRIJQU+QKcSYQr78Bbum5ubND+/S7XaVp7A6dO5arVtbu5s6eAsXsRvlQi7MYnH8RJFMxcWdlhcHJPnHdPTLTMzV+V5pzT4dnJwQYSdEe6P8FiEM32/7/+NxQhPRtgfYWemuBwtXFL8pjdu08MNfIgLKWc9QxsrWMIpfHcbglP4NsWuoJ2ho7ie1/AXPkrzzVjGJ4pL1ErOO1k6kjZW8Q8W8cMAgh/xc786uhkRycX1pLKEzze5WMEXaW85Oe4QkRX7EalBa8neGfzRR3AxOWilmBspR9YX1HGzoS3UU3mBn9La6k31An0EEQWz9UTyfVJbV3R+JZW5UarDsFvRTSRr+DUlDaWS1pLDTn/CIIKNPheXFU/eNb2XWPc2BBFUyl6s4k/ckeZJ/ab9QQ5KF+1fzr07e755+WHYO3HnU/vvfe6dzepJc/NtMRxh68kvX+1GwqdfvdaNsLXYuzU++w9jcjBgvT3IwaASAp29Ew8e+eybN94k3F194FhRv9gc/C92R5LbTlwL3wAAAABJRU5ErkJggg==</href>
+				</Icon>
+				<hotSpot x="8" y="14" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.7</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3.2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_17F3ACEA7D379E2FDD19">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAACx0lEQVQ4jY3UT2gcdRQH8M9Mtoa00ZKDHjZiil7Wgj32ZsGDl0p7EopCCwrSg0c11h4UPGjM1WuL/06tYsVSECQ92GhxiQepSVvbVaNNxIuJ2d1s9s/seJjfbqabpfpgYefN+37f933fY6I0TdWm90cYwSjGsA8v4ilZfIMPcBtbaKIzPruURtXXHo+wK4AfwAm8FEiiQJDid5zFR1gPRO1CrvNevIPjdkaEKbyNA3gVa0gLuA/343kcH3nsoLGTH+5gaM9/ovnlu/AsruEMkkKY+WG8nAc0L87ort5IIS6WjB45FXXXVrSvfAwnMYebMXbjBTySJ+iu3kiTSjlKKmWdhQuDgoqBZE8Be/DMYMXo0TeitLEBUVwsSddWB4mOYia27f5d0V29LqmUs9/inGiiaOTRg2muZC9GC4hxJyTIVha1F76QVMr96rGJSbuePBF1Fud6qVVEBXRwASXZSqNgXK9bFE9MioslyTY4xTlhC018h1uBJPPgyKneEYHO4uXeGuEXXMZWAXXZUVxEKamU1ab3D1oyGJfwNzZj2Un+g6v46b+Q+BnzsnPuE1TxJz5D+x7gDs7jj4BpxmiFMdaDim/vQXA1172OVoxEZuRGmOvT8H8wavhc5lc1KE9i2Upa2JR5cRPfDyFYkHnU745uPD67lAYVW6HLOr4aUFHH1+FdLShOxmeX0hgCSQeNIO8alnMEd4KCaqhpB4w4V5TYNrSKH8J4KX4Muc1e9x6oTxAY26GgLrvORnieD7kt4VvYwxUGjOoGkgauB9BIGKkRFCZ5wDCCTk7FX7JP3kbIdUJNP/IeyG2kt9YV2YVu9rrn5Q9T0FPRWj72+nPL9ZWnYWr35LGp8++9P9h9h4IcQfvWxq9vHj50Oj586HR8u/bbW0HB/yZoDckPJRg2Qopk30MHXrl0ZWaW1NSDT0xzLgnv7op/AVrwJqSDd8RLAAAAAElFTkSuQmCC</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.7</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3.2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_39E516D0BC379E2FDD18">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2975f3</color>
+				<width>4.8</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_204BA6B9BA379E2FDD18">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2975f3</color>
+				<width>3.2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_5CC0F202BB379E2FDD18">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAACzklEQVQ4jY3UT2wUdRQH8M/Mbgulu3LSQ1GLnoqNnOpREmm4YGJSY0I0EaOJ8UA8aTHhoAkHo3vUszFwA42cTEy0HKTaSPBgpKsVUCuUxotgt9suuzs7HuY3dbptSN9p5s37/nnv9+YXpWlq9eQTEUrYhSHsx2t4Rhbf4lNcRwv30K3U6mnUmD4QYSCAH8BxvB5IokCQ4i98gjO4G4g65YLyXryPl22NCKM4jYN4G3eQxhhEFS8VwfHImEqtbvj0D/1kL+AVVDAYh54fxoli1eDTx/WWF0S7qwYmptI+kjfwGIZi7MGreLRQkJbGJ3WuXNCdv6g0PhmFOeQxEkiGYwzj2SL9wMRUFO2uSq7OSOZnlMcPi4aqkc3xXE6QT38jSuOTessLeneWdOe/AeWsjaKLvdhVRoxbISEaqqbl8cMRVGr1Ta46l84WdW4jKqOLCxhDqTwxFUHrzJtp2mpAVHr8KYNHTohHxvRu/yo4OYcklm3V97gWlPSWF3TnZ6LkxuUouXFZZ/astNUwMDGVq/+Oi2hFjekD+/AInse0ncVHwcHNWLaS/2IOV3cA/g2zsnVeywkaWMbn6NwH3MV53AyYezHaaAbGOXx3H4K5gnoT7RiJbJAr+Aefhef+WMUXsp+oEZwnsexI2liTzWIBW/4gXJHNaEMdvbhSq6fBRSuo3MVXfS6a+Dp8Ww2Ok0qtnsYQSLpYD/Z+xmKB4FZw0Ag1nYARF4oS/w+0gR9Deyl+Crm1XD0HbRAExk4oaMq2cz28z4ZcS7gLc1y5b1C9QLKOXwKoFFpaDw6TImA7gm7Bxd+yK28l5LqhZiOKM1A4kfxYl2QbuparF+1v5yB30V489s6Li82lIzC6Z9+x0fMfftyvvsVBgaBzbeWPd48eOhUfPXQqvr7653vBwY4J2tvktyXYroUUyf6HDr715aUPaqRGH3zyJOcSm+9E8B8qUBnwTOZzQQAAAABJRU5ErkJggg==</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.7</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3.2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_6740271BAF379E2FDD18">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAACzklEQVQ4jY3UT2wUdRQH8M/Mbgulu3LSQ1GLnoqNnOpREmm4YGJSY0I0EaOJ8UA8aTHhoAkHo3vUszFwA42cTEy0HKTaSPBgpKsVUCuUxotgt9suuzs7HuY3dbptSN9p5s37/nnv9+YXpWlq9eQTEUrYhSHsx2t4Rhbf4lNcRwv30K3U6mnUmD4QYSCAH8BxvB5IokCQ4i98gjO4G4g65YLyXryPl22NCKM4jYN4G3eQxhhEFS8VwfHImEqtbvj0D/1kL+AVVDAYh54fxoli1eDTx/WWF0S7qwYmptI+kjfwGIZi7MGreLRQkJbGJ3WuXNCdv6g0PhmFOeQxEkiGYwzj2SL9wMRUFO2uSq7OSOZnlMcPi4aqkc3xXE6QT38jSuOTessLeneWdOe/AeWsjaKLvdhVRoxbISEaqqbl8cMRVGr1Ta46l84WdW4jKqOLCxhDqTwxFUHrzJtp2mpAVHr8KYNHTohHxvRu/yo4OYcklm3V97gWlPSWF3TnZ6LkxuUouXFZZ/astNUwMDGVq/+Oi2hFjekD+/AInse0ncVHwcHNWLaS/2IOV3cA/g2zsnVeywkaWMbn6NwH3MV53AyYezHaaAbGOXx3H4K5gnoT7RiJbJAr+Aefhef+WMUXsp+oEZwnsexI2liTzWIBW/4gXJHNaEMdvbhSq6fBRSuo3MVXfS6a+Dp8Ww2Ok0qtnsYQSLpYD/Z+xmKB4FZw0Ag1nYARF4oS/w+0gR9Deyl+Crm1XD0HbRAExk4oaMq2cz28z4ZcS7gLc1y5b1C9QLKOXwKoFFpaDw6TImA7gm7Bxd+yK28l5LqhZiOKM1A4kfxYl2QbuparF+1v5yB30V489s6Li82lIzC6Z9+x0fMfftyvvsVBgaBzbeWPd48eOhUfPXQqvr7653vBwY4J2tvktyXYroUUyf6HDr715aUPaqRGH3zyJOcSm+9E8B8qUBnwTOZzQQAAAABJRU5ErkJggg==</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>0.7</scale>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4.8</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1CFA62EFD1379E2FDD17">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3.2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_073D5FCDBC379E2FDD19">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_17F3ACEA7D379E2FDD19</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_26D874DA9C379E2FDD19</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_1257366547379E2FDD18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_204BA6B9BA379E2FDD18</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_39E516D0BC379E2FDD18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="547BDF2BE4000001">
+		<name>Mens Route </name>
+		<visibility>0</visibility>
+		<styleUrl>#__managed_style_0A08D273EB379E2FDD17</styleUrl>
+		<Placemark id="547BDF2BE7000002">
+			<name>Fly-Over Tour</name>
+			<styleUrl>#__managed_style_1257366547379E2FDD18</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					77.576291,12.873034,932 77.576182,12.872201,931 77.576086,12.871594,930 77.57607400000001,12.871488,930 77.57597699999999,12.870834,933.9999999999999 77.575772,12.869361,937 77.57581399999999,12.869294,937 77.575807,12.869229,937 77.575856,12.869193,937 77.575874,12.869139,937 77.576195,12.868892,937 77.576238,12.868882,937 77.576556,12.86864,938 77.576606,12.868565,938 77.576634,12.868523,938 77.576806,12.867995,937 77.577073,12.867454,937 77.57729999999999,12.867104,937 77.577557,12.866816,938 77.577623,12.866767,938 77.57785,12.86665,938 77.57811700000001,12.866567,938 77.578695,12.866316,938 77.578895,12.866192,938 77.579093,12.866038,938 77.57946099999999,12.865679,939.0000000000001 77.579638,12.865553,939.9999999999999 77.579745,12.865261,941 77.57983400000001,12.865046,942 77.579955,12.864865,942 77.579975,12.864838,942 77.580055,12.864764,941 77.58018800000001,12.864403,941 77.58039599999999,12.863354,941 77.58040800000001,12.863199,941 77.58034000000001,12.862294,941 77.580296,12.861858,941 77.580217,12.860189,938 77.58018,12.859705,939.9999999999999 77.580068,12.85852,943 77.58006,12.858429,943 77.580021,12.858366,943 77.579987,12.85844,943 77.58,12.8586,942 77.580088,12.859712,939.0000000000001 77.58014,12.860194,938 77.580152,12.860622,939.0000000000001 77.58018300000001,12.861243,939.9999999999999 77.580241,12.861865,941 77.58029000000001,12.862491,939.9999999999999 77.580337,12.863217,941 77.58032799999999,12.863346,941 77.580099,12.864395,941 77.57858400000001,12.864453,943 77.57811,12.86448,943 77.577637,12.864508,942 77.576892,12.864533,939.9999999999999 77.576598,12.864542,939.9999999999999 77.576544,12.864059,939.0000000000001 77.576515,12.864025,939.0000000000001 77.57647900000001,12.864001,939.0000000000001 77.576418,12.863989,939.0000000000001 77.576222,12.864,938 77.57589,12.864016,937 77.575783,12.864022,937 77.57557799999999,12.864035,936 77.575205,12.864076,934.9999999999999 77.573667,12.864139,932 77.57213900000001,12.864218,927 77.57108700000001,12.864397,923.9999999999999 77.570778,12.864435,922.9999999999999 77.570021,12.864527,919 77.56974700000001,12.86456,917.9999999999999 77.570021,12.864527,919 77.570778,12.864435,922.9999999999999 77.57108700000001,12.864397,923.9999999999999 77.57213900000001,12.864218,927 77.573667,12.864139,932 77.575205,12.864076,934.9999999999999 77.575276,12.864626,934.9999999999999 77.57543099999999,12.865839,937 77.575491,12.866195,937 77.57552099999999,12.866366,937 77.575554,12.866552,937 77.575587,12.866734,938 77.57562,12.866922,938 77.575636,12.867014,938 77.57565099999999,12.867097,938 77.57575,12.867688,939.0000000000001 77.575768,12.868073,938 77.575766,12.868358,938 77.575771,12.868848,937 77.57575799999999,12.868909,937 77.57576899999999,12.869074,937 77.575796,12.869132,937 77.575807,12.869229,937 77.57581399999999,12.869294,937 77.575772,12.869361,937 77.57597699999999,12.870834,933.9999999999999 77.57607400000001,12.871488,930 77.576086,12.871594,930 77.576182,12.872201,931 77.576291,12.873034,932 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="547BDF2BE7000003">
+			<name>START</name>
+			<styleUrl>#__managed_style_4E08E5FFC7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.576291,12.873034,932</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE8000004">
+			<name>Start on </name>
+			<description>Start on </description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.576291,12.873034,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE8000005">
+			<name>Turn sligh</name>
+			<description>Turn slight right</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.57581399999999,12.869294,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE8000006">
+			<name>Turn left </name>
+			<description>Turn left onto Amruth Nagar Main Road</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.575807,12.869229,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE8000007">
+			<name>Keep right</name>
+			<description>Keep right</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.579638,12.865553,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE8000008">
+			<name>Keep left</name>
+			<description>Keep left</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.579975,12.864838,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE8000009">
+			<name>Turn sharp</name>
+			<description>Turn sharp right</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.580021,12.858366,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE800000A">
+			<name>Turn left</name>
+			<description>Turn left</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.580099,12.864395,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE800000B">
+			<name>Turn left</name>
+			<description>Turn left</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.576598,12.864542,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE800000C">
+			<name>Keep right</name>
+			<description>Keep right</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.576515,12.864025,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE800000D">
+			<name>Turn left</name>
+			<description>Turn left</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.575205,12.864076,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE800000E">
+			<name>Keep left</name>
+			<description>Keep left</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.57581399999999,12.869294,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE800000F">
+			<name>FINISH</name>
+			<description>FINISH</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.576291,12.873034,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE8000010">
+			<name>FINISH</name>
+			<styleUrl>#__managed_style_073D5FCDBC379E2FDD19</styleUrl>
+			<Point>
+				<coordinates>77.576291,12.873034,932</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder id="547BDF2BE8000011">
+		<name>Womens Route </name>
+		<styleUrl>#__managed_style_0A08D273EB379E2FDD17</styleUrl>
+		<Placemark id="547BDF2BE8000012">
+			<name>Fly-Over Tour</name>
+			<styleUrl>#__managed_style_1257366547379E2FDD18</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					77.57629,12.873026,932 77.576182,12.872201,931 77.576086,12.871594,930 77.57607400000001,12.871488,930 77.57597699999999,12.870834,933.9999999999999 77.575772,12.869361,937 77.57581399999999,12.869294,937 77.575807,12.869229,937 77.575856,12.869193,937 77.575874,12.869139,937 77.576195,12.868892,937 77.576238,12.868882,937 77.576556,12.86864,938 77.576634,12.868523,938 77.576806,12.867995,937 77.577073,12.867454,937 77.57729999999999,12.867104,937 77.577557,12.866816,938 77.577623,12.866767,938 77.57785,12.86665,938 77.57811700000001,12.866567,938 77.578695,12.866316,938 77.578895,12.866192,938 77.579093,12.866038,938 77.57946099999999,12.865679,939.0000000000001 77.579638,12.865553,939.9999999999999 77.579745,12.865261,941 77.57983400000001,12.865046,942 77.579955,12.864865,942 77.579975,12.864838,942 77.580055,12.864764,941 77.58014900000001,12.864509,941 77.58018800000001,12.864403,941 77.580099,12.864395,941 77.57885400000001,12.864442,943 77.57858400000001,12.864453,943 77.57811,12.86448,943 77.577637,12.864508,942 77.576598,12.864542,939.9999999999999 77.576544,12.864059,939.0000000000001 77.576515,12.864025,939.0000000000001 77.57647900000001,12.864001,939.0000000000001 77.576418,12.863989,939.0000000000001 77.576222,12.864,938 77.57589,12.864016,937 77.575783,12.864022,937 77.57557799999999,12.864035,936 77.575495,12.864044,936 77.575205,12.864076,934.9999999999999 77.575276,12.864626,934.9999999999999 77.575349,12.8652,934.9999999999999 77.57543099999999,12.865839,937 77.575491,12.866195,937 77.57552099999999,12.866366,937 77.575554,12.866552,937 77.575587,12.866734,938 77.57562,12.866922,938 77.57565099999999,12.867097,938 77.57575,12.867688,939.0000000000001 77.575768,12.868073,938 77.575766,12.868358,938 77.575771,12.868848,937 77.57575799999999,12.868909,937 77.57576899999999,12.869074,937 77.575796,12.869132,937 77.575807,12.869229,937 77.57581399999999,12.869294,937 77.575772,12.869361,937 77.57597699999999,12.870834,933.9999999999999 77.57607400000001,12.871488,930 77.576086,12.871594,930 77.576182,12.872201,931 77.57629,12.873026,932 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark id="547BDF2BE8000013">
+			<name>START</name>
+			<styleUrl>#__managed_style_4E08E5FFC7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.57629,12.873026,932</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE8000014">
+			<name>Start on </name>
+			<description>Start on </description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.57629,12.873026,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE8000015">
+			<name>Turn sligh</name>
+			<description>Turn slight right</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.57581399999999,12.869294,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE8000016">
+			<name>Turn left </name>
+			<description>Turn left onto Amruth Nagar Main Road</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.575807,12.869229,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE8000017">
+			<name>Keep right</name>
+			<description>Keep right</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.579638,12.865553,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE9000018">
+			<name>Keep left</name>
+			<description>Keep left</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.579975,12.864838,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE9000019">
+			<name>Turn sharp</name>
+			<description>Turn sharp right</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.58018800000001,12.864403,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE900001A">
+			<name>Turn left</name>
+			<description>Turn left</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.576598,12.864542,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE900001B">
+			<name>Keep right</name>
+			<description>Keep right</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.576515,12.864025,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE900001C">
+			<name>Turn right</name>
+			<description>Turn right</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.575205,12.864076,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE900001D">
+			<name>Keep left</name>
+			<description>Keep left</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.57581399999999,12.869294,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE900001E">
+			<name>FINISH</name>
+			<description>FINISH</description>
+			<styleUrl>#__managed_style_733A48ABD7379E2FDD18</styleUrl>
+			<Point>
+				<coordinates>77.57629,12.873026,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="547BDF2BE900001F">
+			<name>FINISH</name>
+			<styleUrl>#__managed_style_073D5FCDBC379E2FDD19</styleUrl>
+			<Point>
+				<coordinates>77.57629,12.873026,932</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
