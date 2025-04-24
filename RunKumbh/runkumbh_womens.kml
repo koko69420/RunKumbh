@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml creator="plotaroute.com http://www.plotaroute.com" xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<name>runkumbh_womens</name>
+<open>1</open>
+<Style id="StartIconStyle">
+<IconStyle id="StartIcon">
+<Icon><href>https://www.plotaroute.com/images/icons/starticon.png</href></Icon>
+</IconStyle>
+<LabelStyle><scale>0.7</scale></LabelStyle>
+</Style>
+<Style id="FinishIconStyle">
+<IconStyle id="FinishIcon">
+<Icon><href>https://www.plotaroute.com/images/icons/finishicon.png</href></Icon>
+</IconStyle>
+<LabelStyle><scale>0.7</scale></LabelStyle>
+</Style>
+<Style id="RoutePath">
+<LineStyle>
+<color>FF2975F3</color>
+<width>4</width>
+</LineStyle>
+</Style>
+<Style id="WaypointIconStyle">
+<IconStyle id="WaypointIcon">
+<Icon><href>https://www.plotaroute.com/images/icons/waypointicon.png</href></Icon>
+<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+</IconStyle>
+<LabelStyle><scale>0.7</scale></LabelStyle>
+</Style>
+<LookAt>
+<longitude>77.576290</longitude>
+<latitude>12.873026</latitude>
+<range>400</range>
+<tilt>60</tilt>
+<altitudeMode>clampToGround</altitudeMode>
+</LookAt>
+<Folder id="Routenull">
+<name><![CDATA[Unnamed Route]]> </name><description><![CDATA[]]></description><Placemark>
+<name><![CDATA[Fly-Over Tour]]></name>
+<description><![CDATA[]]></description>
+<styleUrl>#RoutePath</styleUrl>
+<LineString id="Route">
+<extrude>0</extrude>
+<tessellate>1</tessellate>
+<coordinates>
+77.57629,12.873026,932
+77.57629,12.873026,932
+77.576182,12.872201,931
+77.576086,12.871594,930
+77.576074,12.871488,930
+77.575977,12.870834,934
+77.575772,12.869361,937
+77.575814,12.869294,937
+77.575807,12.869229,937
+77.575856,12.869193,937
+77.575874,12.869139,937
+77.576195,12.868892,937
+77.576238,12.868882,937
+77.576556,12.86864,938
+77.576634,12.868523,938
+77.576806,12.867995,937
+77.577073,12.867454,937
+77.5773,12.867104,937
+77.577557,12.866816,938
+77.577623,12.866767,938
+77.57785,12.86665,938
+77.578117,12.866567,938
+77.578695,12.866316,938
+77.578895,12.866192,938
+77.579093,12.866038,938
+77.579461,12.865679,939
+77.579638,12.865553,940
+77.579745,12.865261,941
+77.579834,12.865046,942
+77.579955,12.864865,942
+77.579975,12.864838,942
+77.580055,12.864764,941
+77.580149,12.864509,941
+77.580149,12.864509,941
+77.580188,12.864403,941
+77.580099,12.864395,941
+77.578854,12.864442,943
+77.578854,12.864442,943
+77.578584,12.864453,943
+77.57811,12.86448,943
+77.577637,12.864508,942
+77.576598,12.864542,940
+77.576544,12.864059,939
+77.576515,12.864025,939
+77.576479,12.864001,939
+77.576418,12.863989,939
+77.576222,12.864,938
+77.57589,12.864016,937
+77.575783,12.864022,937
+77.575578,12.864035,936
+77.575495,12.864044,936
+77.575495,12.864044,936
+77.575205,12.864076,935
+77.575276,12.864626,935
+77.575349,12.8652,935
+77.575349,12.8652,935
+77.575431,12.865839,937
+77.575491,12.866195,937
+77.575521,12.866366,937
+77.575554,12.866552,937
+77.575587,12.866734,938
+77.57562,12.866922,938
+77.575651,12.867097,938
+77.57575,12.867688,939
+77.575768,12.868073,938
+77.575766,12.868358,938
+77.575771,12.868848,937
+77.575758,12.868909,937
+77.575769,12.869074,937
+77.575796,12.869132,937
+77.575807,12.869229,937
+77.575814,12.869294,937
+77.575772,12.869361,937
+77.575977,12.870834,934
+77.576074,12.871488,930
+77.576086,12.871594,930
+77.576182,12.872201,931
+77.57629,12.873026,932
+</coordinates>
+</LineString>
+</Placemark>
+<Placemark>
+<name>START</name>
+<styleUrl>#StartIconStyle</styleUrl>
+<Point>
+<coordinates>77.57629,12.873026,932</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Start on ]]></name>
+<description><![CDATA[Start on ]]></description>
+<styleUrl>#WaypointIconStyle</styleUrl>
+<Point>
+<coordinates>77.57629,12.873026,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Turn sligh]]></name>
+<description><![CDATA[Turn slight right]]></description>
+<styleUrl>#WaypointIconStyle</styleUrl>
+<Point>
+<coordinates>77.575814,12.869294,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Turn left ]]></name>
+<description><![CDATA[Turn left onto Amruth Nagar Main Road]]></description>
+<styleUrl>#WaypointIconStyle</styleUrl>
+<Point>
+<coordinates>77.575807,12.869229,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Keep right]]></name>
+<description><![CDATA[Keep right]]></description>
+<styleUrl>#WaypointIconStyle</styleUrl>
+<Point>
+<coordinates>77.579638,12.865553,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Keep left]]></name>
+<description><![CDATA[Keep left]]></description>
+<styleUrl>#WaypointIconStyle</styleUrl>
+<Point>
+<coordinates>77.579975,12.864838,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Turn sharp]]></name>
+<description><![CDATA[Turn sharp right]]></description>
+<styleUrl>#WaypointIconStyle</styleUrl>
+<Point>
+<coordinates>77.580188,12.864403,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Turn left]]></name>
+<description><![CDATA[Turn left]]></description>
+<styleUrl>#WaypointIconStyle</styleUrl>
+<Point>
+<coordinates>77.576598,12.864542,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Keep right]]></name>
+<description><![CDATA[Keep right]]></description>
+<styleUrl>#WaypointIconStyle</styleUrl>
+<Point>
+<coordinates>77.576515,12.864025,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Turn right]]></name>
+<description><![CDATA[Turn right]]></description>
+<styleUrl>#WaypointIconStyle</styleUrl>
+<Point>
+<coordinates>77.575205,12.864076,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Keep left]]></name>
+<description><![CDATA[Keep left]]></description>
+<styleUrl>#WaypointIconStyle</styleUrl>
+<Point>
+<coordinates>77.575814,12.869294,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[FINISH]]></name>
+<description><![CDATA[FINISH]]></description>
+<styleUrl>#WaypointIconStyle</styleUrl>
+<Point>
+<coordinates>77.57629,12.873026,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[FINISH]]></name>
+<styleUrl>#FinishIconStyle</styleUrl>
+<Point>
+<coordinates>77.57629,12.873026,932</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<ScreenOverlay>
+<name><![CDATA[plotaroute.com]]></name>
+<visibility>1</visibility>
+<open>1</open>
+<Icon>
+<href>https://www.plotaroute.com/images/logo34reversev3.png</href>
+</Icon>
+<overlayXY x="0" y="0" xunits="fraction" yunits="fraction"/>
+<screenXY x="0.01" y="0.94" xunits="fraction" yunits="fraction"/>
+<rotationXY x="0" y="0" xunits="fraction" yunits="fraction"/>
+<size x="0" y="0" xunits="fraction" yunits="fraction"/>
+</ScreenOverlay>
+<Snippet><![CDATA[This route was downloaded from <a href="https://www.plotaroute.com">plotaroute.com</a>]]></Snippet>
+</Document>
+</kml>

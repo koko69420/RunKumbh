@@ -1,0 +1,14 @@
+ncc-marathon/
+├── index.html
+├── style.css
+├── script.js
+└── images/
+    ├── rvitm-logo.png
+    ├── ncc-logo.png
+    ├── marathon-bg.jpg
+    ├── ncc-cadets.jpg
+    ├── marathon-route.jpg
+    ├── upi-qr.png
+    ├── runner1.png
+    ├── runner2.png
+    └── runner3.png
