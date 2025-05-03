@@ -242,6 +242,7 @@ nav {
     padding-top: 80px;
     position: relative;
     overflow: hidden;
+    z-index: 2;
 }
 
 .hero-content {
