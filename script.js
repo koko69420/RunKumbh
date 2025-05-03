@@ -123,87 +123,25 @@ if (marathonForm) {
     });
 }
 
-// ===== Registration Form Toggle =====
+// Form Toggle Functionality
 const registerBtn = document.getElementById('registerBtn');
 const formContainer = document.getElementById('formContainer');
 const formLink = document.getElementById('formLink');
 
-if (registerBtn && formContainer) {
-    registerBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        // Hide register button with animation
-        registerBtn.style.opacity = '0';
-        setTimeout(() => {
-            registerBtn.style.display = 'none';
-        }, 300);
-        
-        // Show form container with animation
-        formContainer.style.display = 'block';
-        setTimeout(() => {
-            formContainer.style.opacity = '1';
-        }, 10);
-        
-        // Show form link after delay
-        setTimeout(() => {
-            formLink.style.display = 'block';
-            setTimeout(() => {
-                formLink.style.opacity = '1';
-            }, 10);
-        }, 1000);
-        
-        // Smooth scroll to form
-        formContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-}
-
-// ===== Subtle Background Parallax Effect =====
-document.addEventListener('DOMContentLoaded', function() {
-    // Only apply to desktop (disable for mobile)
-    if (window.innerWidth > 768) {
-        const body = document.body;
-        let lastScroll = 0;
-        let ticking = false;
-        
-        window.addEventListener('scroll', function() {
-            lastScroll = window.scrollY;
-            
-            if (!ticking) {
-                window.requestAnimationFrame(function() {
-                    body.style.backgroundPosition = `center ${lastScroll * 0.15}px`;
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        });
-        
-        // Initialize position
-        body.style.backgroundPosition = 'center 0px';
-    }
+registerBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Hide the register button
+    registerBtn.style.display = 'none';
+    
+    // Show the form container
+    formContainer.style.display = 'block';
+    
+    // Show the form link after a small delay
+    setTimeout(() => {
+        formLink.style.display = 'block';
+    }, 1000);
+    
+    // Smooth scroll to the form
+    formContainer.scrollIntoView({ behavior: 'smooth' });
 });
-
-// Subtle background movement for desktop only
-if (window.innerWidth > 768) {
-    document.body.style.backgroundAttachment = 'scroll';
-    
-    window.addEventListener('scroll', function() {
-        const scrollPosition = window.scrollY * 0.1;
-        document.body.style.backgroundPosition = `center ${scrollPosition}px`;
-    });
-}
-
-// Continuous background scroll effect
-if (window.innerWidth > 768) {
-    const bgSections = document.querySelector('.continuous-bg-sections');
-    
-    if (bgSections) {
-        window.addEventListener('scroll', function() {
-            const scrollPos = window.scrollY * 0.08; // Very subtle (8% scroll speed)
-            bgSections.style.backgroundPosition = `center ${scrollPos}px`;
-            
-            // Sync the pseudo-element animation
-            const pseudoPos = scrollPos % (window.innerHeight * 2);
-            bgSections.style.setProperty('--scroll-pos', `${pseudoPos}px`);
-        });
-    }
-}

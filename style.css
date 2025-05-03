@@ -242,7 +242,6 @@ nav {
     padding-top: 80px;
     position: relative;
     overflow: hidden;
-    z-index: 2;
 }
 
 .hero-content {
@@ -971,7 +970,7 @@ footer {
         linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
         url('images/marathon-bd.png') center/cover fixed;
     background-attachment: scroll;
-    z-index: -2;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -983,7 +982,7 @@ footer {
     right: 0;
     bottom: 0;
     background: url('images/marathon-bd.png') center/cover;
-    z-index: -2;
+    z-index: -1;
     background-attachment: fixed;
     animation: subtleScroll 100s linear infinite;
 }
@@ -1005,4 +1004,21 @@ footer {
     padding: 2rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     margin: 1rem 0;
+}
+
+/* Form Container Styling */
+#formContainer {
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+#formLink {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+#formLink:hover {
+    color: var(--accent-color);
 }

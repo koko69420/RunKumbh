@@ -962,13 +962,6 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* Update Twitter/X icon styling */
-.fa-x-twitter {
-    font-weight: 900; /* Makes the X icon bolder */
-    transform: scale(0.9); /* Slightly smaller to match other icons */
-}
-
-
 /* Continuous Background Sections */
 .continuous-bg-sections {
     position: relative;
@@ -1010,4 +1003,21 @@ footer {
     padding: 2rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     margin: 1rem 0;
+}
+
+/* Form Container Styling */
+#formContainer {
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+#formLink {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+#formLink:hover {
+    color: var(--accent-color);
 }
