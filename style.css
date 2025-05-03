@@ -26,40 +26,6 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     position: relative;
-    background: red url('images/marathon-bd.png') center/cover no-repeat !important;
-    background: 
-        linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
-        url('images/marathon-bd.png') center/cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-@keyframes subtleBgScroll {
-    0% { background-position: center top; }
-    50% { background-position: center bottom; }
-    100% { background-position: center top; }
-}
-
-/* Ensure content sections have transparent backgrounds */
-.container,
-.about,
-.event-details,
-.route,
-.registration,
-.contact {
-    background-color: transparent;
-}
-
-/* Add slight white overlay to improve readability */
-.about-content,
-.details-grid,
-.route-content,
-.registration-content,
-.contact-content {
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
 .container {

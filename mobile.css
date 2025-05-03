@@ -968,24 +968,6 @@ footer {
     transform: scale(0.9); /* Slightly smaller to match other icons */
 }
 
-/* ===== Background Image Settings for Mobile ===== */
-body {
-    background: 
-        linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
-        url('../images/marathon-bd.png') center/cover;
-    background-attachment: scroll;
-    animation: none !important;
-}
-
-.about-content,
-.details-grid,
-.route-content,
-.registration-content,
-.contact-content {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 1.5rem;
-    margin: 0.5rem;
-}
 
 /* Continuous Background Sections */
 .continuous-bg-sections {
