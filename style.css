@@ -3,8 +3,8 @@
     --primary-color: #006400; /* Dark green - NCC color */
     --secondary-color: #FFD700; /* Gold */
     --accent-color: #8B0000; /* Dark red */
-    --light-color: #f8f9fa;
-    --dark-color: #343a40;
+    --light-color: #ebffeb; /* Very light green tint */
+    --dark-color: #071e05;
     --text-color: #333;
     --text-light: #777;
 }
@@ -26,6 +26,40 @@ body {
     color: var(--text-color);
     overflow-x: hidden;
     position: relative;
+    background: red url('images/marathon-bd.png') center/cover no-repeat !important;
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+        url('images/marathon-bd.png') center/cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+@keyframes subtleBgScroll {
+    0% { background-position: center top; }
+    50% { background-position: center bottom; }
+    100% { background-position: center top; }
+}
+
+/* Ensure content sections have transparent backgrounds */
+.container,
+.about,
+.event-details,
+.route,
+.registration,
+.contact {
+    background-color: transparent;
+}
+
+/* Add slight white overlay to improve readability */
+.about-content,
+.details-grid,
+.route-content,
+.registration-content,
+.contact-content {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
 .container {
@@ -147,7 +181,7 @@ p {
 
 /* Header Styles */
 header {
-    background-color: rgb(208, 204, 226);
+    background-color: #bee6c2;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position:relative;
     max-width: 100%;
@@ -230,7 +264,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/marathon-bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/marathon-bg-ed.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -963,17 +997,45 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* Form Height Transition */
-#registrationForm {
-    transition: height 0.5s ease-in-out;
+/* Continuous Background Sections */
+.continuous-bg-sections {
+    position: relative;
+    background: 
+        linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+        url('images/marathon-bd.png') center/cover fixed;
+    background-attachment: scroll;
+    z-index: 1;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Mobile-specific form height adjustments */
-@media (max-width: 768px) {
-    #registrationForm {
-        height: 1000px !important; /* Adjusted mobile height */
-    }
+.continuous-bg-sections::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('images/marathon-bd.png') center/cover;
+    z-index: -1;
+    background-attachment: fixed;
+    animation: subtleScroll 100s linear infinite;
+}
+
+
+
+/* Update existing sections */
+.event-details, 
+.registration {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Content cards inside these sections */
+.details-grid,
+.registration-content {
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 1rem 0;
 }

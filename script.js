@@ -123,18 +123,10 @@ if (marathonForm) {
     });
 }
 
-// ===== Registration Form Section-Based Height Control =====
+// ===== Registration Form Toggle =====
 const registerBtn = document.getElementById('registerBtn');
 const formContainer = document.getElementById('formContainer');
 const formLink = document.getElementById('formLink');
-const registrationForm = document.getElementById('registrationForm');
-
-// Height presets for different states
-const FORM_HEIGHTS = {
-  firstSection: 1950,  // Full height for first section
-  otherSections: 1000, // Reduced height for other sections
-  submitted: 500       // Minimal height after submission
-};
 
 if (registerBtn && formContainer) {
     registerBtn.addEventListener('click', function(e) {
@@ -160,45 +152,58 @@ if (registerBtn && formContainer) {
             }, 10);
         }, 1000);
         
-        // Set initial form height
-        registrationForm.style.height = `${FORM_HEIGHTS.firstSection}px`;
-        
-        // Check for form state changes every second
-        const formCheckInterval = setInterval(() => {
-            try {
-                const iframeDoc = registrationForm.contentDocument || 
-                                 registrationForm.contentWindow.document;
-                
-                // Check for submission confirmation
-                const submitted = iframeDoc.querySelector('.freebirdFormviewerViewResponseConfirmatio‌​nContainer');
-                if (submitted) {
-                    registrationForm.style.height = `${FORM_HEIGHTS.submitted}px`;
-                    clearInterval(formCheckInterval);
-                    return;
-                }
-                
-                // Check if not in first section (simplified detection)
-                const pageIndicator = iframeDoc.querySelector('.freebirdFormviewerViewNavigationPasswordWarning') || 
-                                     iframeDoc.querySelector('.freebirdFormviewerViewNavigationNoProgress');
-                if (pageIndicator && registrationForm.style.height !== `${FORM_HEIGHTS.otherSections}px`) {
-                    registrationForm.style.height = `${FORM_HEIGHTS.otherSections}px`;
-                }
-            } catch (e) {
-                // Cross-origin error fallback
-                console.log('Form state check limited by browser security');
-            }
-        }, 1000);
-        
-        // Cleanup when form is hidden
-        const observer = new MutationObserver(() => {
-            if (formContainer.style.display === 'none') {
-                clearInterval(formCheckInterval);
-                observer.disconnect();
-            }
-        });
-        observer.observe(formContainer, { attributes: true });
-        
         // Smooth scroll to form
         formContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+}
+
+// ===== Subtle Background Parallax Effect =====
+document.addEventListener('DOMContentLoaded', function() {
+    // Only apply to desktop (disable for mobile)
+    if (window.innerWidth > 768) {
+        const body = document.body;
+        let lastScroll = 0;
+        let ticking = false;
+        
+        window.addEventListener('scroll', function() {
+            lastScroll = window.scrollY;
+            
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    body.style.backgroundPosition = `center ${lastScroll * 0.15}px`;
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+        
+        // Initialize position
+        body.style.backgroundPosition = 'center 0px';
+    }
+});
+
+// Subtle background movement for desktop only
+if (window.innerWidth > 768) {
+    document.body.style.backgroundAttachment = 'scroll';
+    
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY * 0.1;
+        document.body.style.backgroundPosition = `center ${scrollPosition}px`;
+    });
+}
+
+// Continuous background scroll effect
+if (window.innerWidth > 768) {
+    const bgSections = document.querySelector('.continuous-bg-sections');
+    
+    if (bgSections) {
+        window.addEventListener('scroll', function() {
+            const scrollPos = window.scrollY * 0.08; // Very subtle (8% scroll speed)
+            bgSections.style.backgroundPosition = `center ${scrollPos}px`;
+            
+            // Sync the pseudo-element animation
+            const pseudoPos = scrollPos % (window.innerHeight * 2);
+            bgSections.style.setProperty('--scroll-pos', `${pseudoPos}px`);
+        });
+    }
 }

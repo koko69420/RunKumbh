@@ -93,104 +93,91 @@
             </div>
         </div>
     </section>
-
-    <!-- Event Details -->
-    <section class="event-details" id="event-details">
-        <div class="container">
-            <h2 data-aos="fade-up">Event Details</h2>
-            <div class="details-grid">
-                <div class="detail-card" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fas fa-route"></i>
-                    <h3>Race Categories</h3>
-                    <ul>
-                        <li><strong>5K Run</strong> - For Men</li>
-                        <li><strong>3K Run</strong> - For Women</li>
-                    </ul>
-                </div>
-                <div class="detail-card" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fas fa-calendar-day"></i>
-                    <h3>Schedule</h3>
-                    <ul>
-                        <li><strong>5:30 AM</strong> - Registration</li>
-                        <li><strong>6:00 AM</strong> - Warm-up</li>
-                        <li><strong>6:30 AM</strong> - 5K Race Start</li>
-                        <li><strong>7:00 AM</strong> - 3K Race Start</li>
-                        <li><strong>8:30 AM</strong> - Prize Distribution</li>
-                    </ul>
-                </div>
-                <div class="detail-card" data-aos="fade-up" data-aos-delay="300">
-                    <i class="fas fa-trophy"></i>
-                    <h3>Prizes</h3>
-                    <ul>
-                        <li>Cash prizes for top 3</li>
-                        <li>Medals for all finishers</li>
-                        <li>Certificates of participation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Route Map Section -->
-    <section class="route" id="route">
-        <div class="container">
-            <h2 data-aos="fade-up">Route Map</h2>
-            <div class="route-content">
-                <div class="route-map" data-aos="fade-right">
-                    <img src="images/marathon-route.png" alt="Marathon Route">
-                </div>
-                <div class="route-details" data-aos="fade-left">
-                    <h3>Start/Finish Point</h3>
-                    <p>RVITM College Ground</p>
-                    <h3>Route Highlights</h3>
-                    <ul>
-                        <li>Water stations every 1.5km</li>
-                        <li>Medical aid stations along the route</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Registration Section -->
-    <section class="registration" id="registration">
-        <div class="container">
-            <h2 data-aos="fade-up">Registration</h2>
-            <div class="registration-content">
-                <div class="registration-info" data-aos="fade-left">
-                    <h3>Registration Details</h3>
-                    <p><strong>Registration Fee:</strong> ₹350</p>
-                    <p><strong>Last Date:</strong> 10 May 2025</p>
-                    <p><strong>Registration Includes:</strong></p>
-                    <ul>
-                        <li>Official RunKumbh T-shirt</li>
-                        <li>Bib number</li>
-                        <li>Refreshments</li>
-                        <li>Finisher's medal</li>
-                        <li>Certificate</li>
-                    </ul>
-                    <button id="registerBtn" class="btn submit-btn pulse">Register Now</button>
-                    <div id="formContainer" style="display: none;">
-                        <iframe id="registrationForm" 
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSemfZ_NxAVv7Wx87n4ze5QmNbSksM22TSsr6Owf5jo-UCeIuw/viewform?embedded=true" 
-                                width="100%" 
-                                height="2000"  <!-- Set initial height for first section -->
-                                frameborder="0" 
-                                marginheight="0" 
-                                marginwidth="0">
-                            Loading…
-                        </iframe>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSemfZ_NxAVv7Wx87n4ze5QmNbSksM22TSsr6Owf5jo-UCeIuw/viewform" 
-                           id="formLink" 
-                           style="display: none; font-size: 0.8rem; color: var(--primary-color); text-decoration: underline;">
-                            Form not shown? Click here
-                        </a>
+    <div class="continuous-bg-sections">
+        <!-- Event Details -->
+        <section class="event-details" id="event-details">
+            <div class="container">
+                <h2 data-aos="fade-up">Event Details</h2>
+                <div class="details-grid">
+                    <div class="detail-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-route"></i>
+                        <h3>Race Categories</h3>
+                        <ul>
+                            <li><strong>5K Run</strong> - For Men</li>
+                            <li><strong>3K Run</strong> - For Women</li>
+                        </ul>
+                    </div>
+                    <div class="detail-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-calendar-day"></i>
+                        <h3>Schedule</h3>
+                        <ul>
+                            <li><strong>5:30 AM</strong> - Registration</li>
+                            <li><strong>6:00 AM</strong> - Warm-up</li>
+                            <li><strong>6:30 AM</strong> - Marathon Start</li>
+                            <li><strong>8:30 AM</strong> - Prize Distribution</li>
+                        </ul>
+                    </div>
+                    <div class="detail-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Prizes</h3>
+                        <ul>
+                            <li>Cash prizes for top 3</li>
+                            <li>Medals for all finishers</li>
+                            <li>Certificates of participation</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Route Map Section -->
+        <section class="route" id="route">
+            <div class="container">
+                <h2 data-aos="fade-up">Route Map</h2>
+                <div class="route-content">
+                    <div class="route-map" data-aos="fade-right">
+                        <img src="images/marathon-route.png" alt="Marathon Route">
+                    </div>
+                    <div class="route-details" data-aos="fade-left">
+                        <h3>Start/Finish Point</h3>
+                        <p>RVITM College Ground</p>
+                        <h3>Route Highlights</h3>
+                        <ul>
+                            <li>Water stations every 1.5km</li>
+                            <li>Medical aid stations along the route</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section class="registration" id="registration">
+            <div class="container">
+                <h2 data-aos="fade-up">Registration</h2>
+                <div class="registration-content">
+                    <div class="registration-info" data-aos="fade-left">
+                        <h3>Registration Details</h3>
+                        <p><strong>Registration Fee:</strong> ₹350</p>
+                        <p><strong>Last Date:</strong> 28 May 2025</p>
+                        <p><strong>Registration Includes:</strong></p>
+                        <ul>
+                            <li>Official RunKumbh T-shirt</li>
+                            <li>Bib number</li>
+                            <li>Refreshments</li>
+                            <li>Finisher's medal</li>
+                            <li>Certificate</li>
+                        </ul>
+                        <button id="registerBtn" class="btn submit-btn pulse">Register Now</button>
+                        <div id="formContainer" style="display: none;">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemfZ_NxAVv7Wx87n4ze5QmNbSksM22TSsr6Owf5jo-UCeIuw/viewform?embedded=true" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSemfZ_NxAVv7Wx87n4ze5QmNbSksM22TSsr6Owf5jo-UCeIuw/viewform" id="formLink" style="display: none; font-size: 0.8rem; color: var(--primary-color); text-decoration: underline;">Form not shown? Click here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -201,13 +188,13 @@
                     <p><i class="fas fa-users"></i> NCC Cadets, RVITM College</p>
                     <p><i class="fas fa-map-marker-alt"></i> R.V. Institute of Technology and Management, Bangalore</p>
                     <p><i class="fas fa-phone"></i> +91 9876543210</p>
-                    <p><i class="fas fa-envelope"></i> runkumbh@rvitm.edu.in</p>
+                    <p><i class="fas fa-envelope"></i> runkumbh.rvitm@rvei.edu.in</p>
                     
                     <div class="social-media">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/RVITMblr/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/rvitmblr/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/RVITM_Official" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@rvitm" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="contact-map" data-aos="fade-left">
