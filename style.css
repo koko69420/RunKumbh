@@ -970,7 +970,7 @@ footer {
         linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
         url('images/marathon-bd.png') center/cover fixed;
     background-attachment: scroll;
-    z-index: 1;
+    z-index: -2;
     overflow: hidden;
 }
 
@@ -982,7 +982,7 @@ footer {
     right: 0;
     bottom: 0;
     background: url('images/marathon-bd.png') center/cover;
-    z-index: -1;
+    z-index: -2;
     background-attachment: fixed;
     animation: subtleScroll 100s linear infinite;
 }
