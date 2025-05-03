@@ -157,52 +157,6 @@
         <div class="container">
             <h2 data-aos="fade-up">Registration</h2>
             <div class="registration-content">
-                <!-- <div class="registration-form" data-aos="fade-right">
-                    <form id="marathon-form" action="https://formsubmit.co/your-email@rvitm.edu.in" method="POST">
-                        <input type="hidden" name="_subject" value="New RunKumbh Registration">
-                        <input type="hidden" name="_template" value="table">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="gender">Gender</label>
-                            <select id="gender" name="gender" required>
-                                <option value="">Select Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="race">Race Category</label>
-                            <select id="race" name="race" required>
-                                <option value="">Select Race</option>
-                                <option value="5k-male">5K Run (Men) - ₹350</option>
-                                <option value="3k-female">3K Run (Women) - ₹350</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="t-shirt">T-Shirt Size</label>
-                            <select id="t-shirt" name="t-shirt" required>
-                                <option value="">Select Size</option>
-                                <option value="S">Small</option>
-                                <option value="M">Medium</option>
-                                <option value="L">Large</option>
-                                <option value="XL">XL</option>
-                                <option value="XXL">XXL</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn submit-btn pulse">Complete Registration</button>
-                    </form>
-                </div> -->
                 <div class="registration-info" data-aos="fade-left">
                     <h3>Registration Details</h3>
                     <p><strong>Registration Fee:</strong> ₹350</p>
@@ -215,28 +169,23 @@
                         <li>Finisher's medal</li>
                         <li>Certificate</li>
                     </ul>
-                    <a href="https://google.com"><button type="submit" class="btn submit-btn pulse">Registration Now</button></a>
-                    <!-- <div class="payment-methods">
-                        <h4>Payment Methods</h4>
-                        <div class="payment-options">
-                            <div class="payment-option">
-                                <i class="fas fa-qrcode"></i>
-                                <p>Scan UPI QR Code</p>
-                            </div>
-                            <div class="payment-option">
-                                <i class="fas fa-university"></i>
-                                <p>Bank Transfer</p>
-                            </div>
-                            <div class="payment-option">
-                                <i class="fas fa-money-bill-wave"></i>
-                                <p>Cash Payment</p>
-                            </div>
-                        </div>
+                    <button id="registerBtn" class="btn submit-btn pulse">Register Now</button>
+                    <div id="formContainer" style="display: none;">
+                        <iframe id="registrationForm" 
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSemfZ_NxAVv7Wx87n4ze5QmNbSksM22TSsr6Owf5jo-UCeIuw/viewform?embedded=true" 
+                                width="100%" 
+                                height="2000"  <!-- Set initial height for first section -->
+                                frameborder="0" 
+                                marginheight="0" 
+                                marginwidth="0">
+                            Loading…
+                        </iframe>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSemfZ_NxAVv7Wx87n4ze5QmNbSksM22TSsr6Owf5jo-UCeIuw/viewform" 
+                           id="formLink" 
+                           style="display: none; font-size: 0.8rem; color: var(--primary-color); text-decoration: underline;">
+                            Form not shown? Click here
+                        </a>
                     </div>
-                    <div class="qr-code">
-                        <img src="images/upi-qr.png" alt="UPI QR Code">
-                        <p>Scan to pay via UPI</p>
-                    </div> -->
                 </div>
             </div>
         </div>

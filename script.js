@@ -122,3 +122,83 @@ if (marathonForm) {
         }, 1500);
     });
 }
+
+// ===== Registration Form Section-Based Height Control =====
+const registerBtn = document.getElementById('registerBtn');
+const formContainer = document.getElementById('formContainer');
+const formLink = document.getElementById('formLink');
+const registrationForm = document.getElementById('registrationForm');
+
+// Height presets for different states
+const FORM_HEIGHTS = {
+  firstSection: 1950,  // Full height for first section
+  otherSections: 1000, // Reduced height for other sections
+  submitted: 500       // Minimal height after submission
+};
+
+if (registerBtn && formContainer) {
+    registerBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Hide register button with animation
+        registerBtn.style.opacity = '0';
+        setTimeout(() => {
+            registerBtn.style.display = 'none';
+        }, 300);
+        
+        // Show form container with animation
+        formContainer.style.display = 'block';
+        setTimeout(() => {
+            formContainer.style.opacity = '1';
+        }, 10);
+        
+        // Show form link after delay
+        setTimeout(() => {
+            formLink.style.display = 'block';
+            setTimeout(() => {
+                formLink.style.opacity = '1';
+            }, 10);
+        }, 1000);
+        
+        // Set initial form height
+        registrationForm.style.height = `${FORM_HEIGHTS.firstSection}px`;
+        
+        // Check for form state changes every second
+        const formCheckInterval = setInterval(() => {
+            try {
+                const iframeDoc = registrationForm.contentDocument || 
+                                 registrationForm.contentWindow.document;
+                
+                // Check for submission confirmation
+                const submitted = iframeDoc.querySelector('.freebirdFormviewerViewResponseConfirmatio‌​nContainer');
+                if (submitted) {
+                    registrationForm.style.height = `${FORM_HEIGHTS.submitted}px`;
+                    clearInterval(formCheckInterval);
+                    return;
+                }
+                
+                // Check if not in first section (simplified detection)
+                const pageIndicator = iframeDoc.querySelector('.freebirdFormviewerViewNavigationPasswordWarning') || 
+                                     iframeDoc.querySelector('.freebirdFormviewerViewNavigationNoProgress');
+                if (pageIndicator && registrationForm.style.height !== `${FORM_HEIGHTS.otherSections}px`) {
+                    registrationForm.style.height = `${FORM_HEIGHTS.otherSections}px`;
+                }
+            } catch (e) {
+                // Cross-origin error fallback
+                console.log('Form state check limited by browser security');
+            }
+        }, 1000);
+        
+        // Cleanup when form is hidden
+        const observer = new MutationObserver(() => {
+            if (formContainer.style.display === 'none') {
+                clearInterval(formCheckInterval);
+                observer.disconnect();
+            }
+        });
+        observer.observe(formContainer, { attributes: true });
+        
+        // Smooth scroll to form
+        formContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+}
