@@ -125,7 +125,7 @@ if (marathonForm) {
 
 // Form Toggle Functionality
 const registerBtn = document.getElementById('registerBtn');
-const formContainer = document.getElementById('formContainer');
+const formContainer = document.getElementById('formContainerr');
 const formLink = document.getElementById('formLink');
 
 registerBtn.addEventListener('click', function(e) {

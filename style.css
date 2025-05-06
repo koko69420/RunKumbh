@@ -933,7 +933,7 @@ footer {
 /* ===== Registration Form Styles ===== */
 #formContainer {
     margin-top: 2rem;
-    opacity: 0;
+    opacity: 100;
     transition: all 0.3s ease;
 }
 
