@@ -127,3 +127,21 @@ if (marathonForm) {
 const registerBtn = document.getElementById('registerBtn');
 const formContainer = document.getElementById('formContainerr');
 const formLink = document.getElementById('formLink');
+
+registerBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    // Hide the register button
+    registerBtn.style.display = 'none';
+
+    // Show the form container
+    formContainer.style.display = 'block';
+
+    // Show the form link after a small delay
+    setTimeout(() => {
+        formLink.style.display = 'block';
+    }, 1000);
+
+    // Smooth scroll to the form
+    formContainer.scrollIntoView({ behavior: 'smooth' });
+});
