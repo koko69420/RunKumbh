@@ -95,53 +95,66 @@ AOS.init({
     offset: 100
 });
 
-// Form submission handling
-const marathonForm = document.getElementById('marathon-form');
-if (marathonForm) {
-    marathonForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Show loading state
-        const submitBtn = this.querySelector('.submit-btn');
-        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
-        submitBtn.disabled = true;
-        
-        // Simulate form submission (replace with actual form submission code)
-        setTimeout(() => {
-            submitBtn.innerHTML = '<i class="fas fa-check"></i> Registration Successful!';
-            
-            // Reset form after 2 seconds
-            setTimeout(() => {
-                this.reset();
-                submitBtn.innerHTML = 'Complete Registration';
-                submitBtn.disabled = false;
-                
-                // Show thank you message
-                alert('Thank you for registering for RunKumbh 2025! We will contact you with further details.');
-            }, 2000);
-        }, 1500);
+
+
+function loadPhotoWall() {
+    const rows = [
+        document.getElementById("photo-row-1"),
+        document.getElementById("photo-row-2"),
+        document.getElementById("photo-row-3")
+    ];
+
+    const images = [];
+    for (let i = 1; i <= 310; i++) {
+        const num = i.toString().padStart(3, '0');
+        images.push(`img${num}.JPG`);
+    }
+
+    const shuffled = [...images].sort(() => 0.5 - Math.random());
+    const imagesPerRow = Math.floor(shuffled.length / 3);
+
+    rows.forEach((row, index) => {
+        const start = index * imagesPerRow;
+        const end = start + imagesPerRow;
+        shuffled.slice(start, end).forEach(name => {
+            const img = document.createElement("img");
+            img.src = `images/photos/${name}`;
+            img.alt = "RunKumbh Photo";
+            img.onclick = () => {
+                const modal = document.getElementById("img-modal");
+                const modalImg = document.getElementById("img-modal-img");
+                modal.style.display = "block";
+                modalImg.src = img.src;
+            };
+            row.appendChild(img);
+        });
     });
 }
 
-// Form Toggle Functionality
-const registerBtn = document.getElementById('registerBtn');
-const formContainer = document.getElementById('formContainerr');
-const formLink = document.getElementById('formLink');
+window.addEventListener("DOMContentLoaded", () => {
+    loadPhotoWall();
 
-registerBtn.addEventListener('click', function(e) {
-    e.preventDefault();
+    const modal = document.getElementById("img-modal");
+    const closeBtn = document.getElementById("img-modal-close");
 
-    // Hide the register button
-    registerBtn.style.display = 'none';
+    // Close button
+    if (closeBtn) {
+        closeBtn.onclick = () => {
+            modal.style.display = "none";
+        };
+    }
 
-    // Show the form container
-    formContainer.style.display = 'block';
+    // Click outside image
+    modal.onclick = (e) => {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    };
 
-    // Show the form link after a small delay
-    setTimeout(() => {
-        formLink.style.display = 'block';
-    }, 1000);
-
-    // Smooth scroll to the form
-    formContainer.scrollIntoView({ behavior: 'smooth' });
+    // Escape key
+    window.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+            modal.style.display = "none";
+        }
+    });
 });

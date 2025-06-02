@@ -1038,3 +1038,98 @@ footer {
 #formLink:hover {
     color: var(--accent-color);
 }
+
+.photo-wall-card {
+    background-color: rgba(255, 255, 255, 0.85); /* Match Event Details */
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.photo-wall-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.photo-row {
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+    animation: scroll-left 60s linear infinite;
+}
+
+.photo-row:nth-child(2) {
+    animation-duration: 80s;
+    animation-direction: reverse;
+}
+
+.photo-row:nth-child(3) {
+    animation-duration: 70s;
+}
+
+.photo-row img {
+    height: 180px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.photo-row img:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-row img {
+        height: 120px;
+    }
+}
+
+.img-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.img-modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.img-modal-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.img-modal-close:hover {
+    color: #f00;
+}
